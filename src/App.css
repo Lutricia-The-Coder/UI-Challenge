@@ -65,47 +65,49 @@ nav li:hover {
   padding: 0.8rem 1.5rem;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  border: none;
 }
 
 .landing button:hover {
   background-color: #8e4a5a;
 }
 .products {
-  background: linear-gradient(to bottom, #f8e8ec 50%, #fff 50%);
+  background: linear-gradient(to bottom, #f8e8ec 50%,
+#EBE8E3 50%);
   text-align: center;
   padding: 4rem 2rem;
+  
 }
 
 .product-grid {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 3rem;
+  margin-bottom: 39px;
+ 
 }
 
-
 .product-card {
-  background-color: transparent; 
   box-shadow: none;
   width: 340px;
+ 
+
 }
 
 .product-image {
   width: 100%;
-  margin-bottom: 1.5rem;
+
 }
 
-.product-text {
-  background-color: #fff;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
 
 .product-text h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
-  color: #b56576;
+  color: black;
+  font-weight: bold;
   margin-bottom: 0.8rem;
+   background-color: 
+#EBE8E3;
 }
 
 .product-text p {
@@ -114,6 +116,8 @@ nav li:hover {
   color: #333;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+   background-color: 
+#EBE8E3;
 }
 
 .product-text button {
@@ -122,6 +126,7 @@ nav li:hover {
   padding: 0.6rem 1.3rem;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  border: none;
 }
 
 .product-text button:hover {
@@ -129,32 +134,10 @@ nav li:hover {
 }
 
 
-.product-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 3rem;
-  margin-bottom: 39px;
-}
-
-
-.product-card {
-  background: none;
-  box-shadow: none;
-  width: 340px;
-}
-
-
-.product-image {
-  width: 100%;
-  margin-bottom: 0;
-}
-
-
 .product-text {
-  background-color: #fff;
+ background-color: 
+#EBE8E3;
   padding: 2rem 1.5rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   margin-top: -1.5rem; 
   position: relative;
 
@@ -167,16 +150,15 @@ nav li:hover {
   align-items: center;
   text-align: center;
   margin-top: 1px;
+   background-color: 
+#EBE8E3;
 }
-.picture-layout {
-  text-align: center;
-}
+
+
 .logo img {
-  width: 180px;          
-  height: auto;         
-  object-fit: contain;  
-  display: block;
-  margin: 0 auto 20px; 
+  width: 100%;          
+  height: auto;          
+ 
 }
 
 .logo {

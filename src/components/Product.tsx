@@ -33,7 +33,7 @@ const Product = () => {
      <img src ={p.img} alt ={p.title} className='product-image'/>
 
 
-    <div className='product-text'>
+    <div  style={{ backgroundColor: '#EBE8E3' }} className='product-text'>
           <h3>{p.title}</h3>
           <p>{p.text} </p>
           <button>{p.btn}</button>
