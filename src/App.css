@@ -90,7 +90,6 @@ nav li:hover {
   justify-content: center;
   gap: 3rem;
   margin-bottom: 39px;
- 
 }
 
 .product-card {
@@ -158,17 +157,19 @@ nav li:hover {
   margin-top: 1px;
    background-color: 
 #EBE8E3;
+padding-block: 50px;
 }
 
 
 .logo img {
   object-fit: cover;   
   height: 14rem;  
-  margin-top: -3rem;       
+  margin-top: -3rem; 
 }
 
 .logo {
   overflow: hidden;    
+  
 }
 
 .bottom-images {
