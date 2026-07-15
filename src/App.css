@@ -156,13 +156,12 @@ nav li:hover {
 
 
 .logo img {
-  width: 100%;          
-  height: auto;          
- 
+  object-fit: cover;   
+  height: 14rem;  
+  margin-top: -3rem;       
 }
 
 .logo {
-  max-width: 150px;     
   overflow: hidden;    
 }
 
