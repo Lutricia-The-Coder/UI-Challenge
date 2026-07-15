@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,7 +10,9 @@
   background-color: #f8d7da;
   padding: 1rem 3rem;
   font-family: 'Poppins', sans-serif;
-  width: 93vw;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logohead {
@@ -51,12 +58,11 @@ nav li:hover {
   background-image: url('./assets/landing.png');
   background-size: 100% 100%;
   background-position: center;
-  width: 94.09vw;
-  height: 500px;
+  height: 100vh;
 
 }
 .decor-text{
-  margin: 110px;
+  margin-top: 15rem;
 }
 
 .landing button {
@@ -331,5 +337,12 @@ padding-top: 5%;
   margin: 0 10px;
   cursor: pointer;
 }
+/*mobile*/
+@media(max-width: 768px) {
+ .product-grid {
+  display: block;
+  gap: 3rem;
 
-
+ 
+}
+}
