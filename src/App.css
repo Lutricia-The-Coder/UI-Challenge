@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
 *{
@@ -9,38 +8,10 @@
 html, body {
   width: 100%;
   overflow-x: hidden; 
+  
 }
 
-body{
-    font-family:'Poppins', sans-serif;
-}
 
-.logo{
-    font-family:'Great Vibes', cursive;
-    font-size:42px;
-}
-
-.hero-title{
-    font-family:'Great Vibes', cursive;
-    font-size:72px;
-}
-
-nav{
-    font-family:'Josefin Sans', sans-serif;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-h2{
-    font-family:'Poppins', sans-serif;
-    font-weight:600;
-}
-
-button{
-    font-family:'Poppins', sans-serif;
-    font-weight:500;
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -98,9 +69,9 @@ nav li:hover {
   padding: 4rem 2rem;
   font-family: 'Playfair Display', serif;
   background-image: url('./assets/landing.png');
-  background-size: 100% 100%;
+  background-size: 100%;
   background-position: center;
-  height: 100vh;
+   height:100vh;
 
 }
 .decor-text{
@@ -468,6 +439,7 @@ padding-top: 5%;
     justify-content: center;
     padding: 6rem 1.5rem 2rem 1.5rem; 
     height: 100vh;
+  
 }
 
 .decor-text {
@@ -680,7 +652,7 @@ padding-top: 5%;
 
   .hamburger-container {
     display: none ;
-    margin-right: 3rem;
+    /*margin-right: 3rem;*/
   }
 
  
@@ -695,23 +667,26 @@ padding-top: 5%;
   }
   .landing {
   
-    background-size: cover;
+background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+
     height: 100vh;
-  padding-top: 100px; 
+    padding-top: 10px; 
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
+    background-position: center top;
+
   }
 
   .decor-text {
    
-    margin-top: 15rem; 
+   margin-top: 15rem; 
     font-size: 2.5rem;
     max-width: 600px;
     text-align: center;
+  
   }
 
   .decor-text h1 {
@@ -722,16 +697,23 @@ padding-top: 5%;
   }
 
   .decor-text p {
-    font-family: 'Ingrid Darling', cursive; 
+  font-family: 'Ingrid Darling', cursive; 
     font-size: 2.2rem;
     margin-top: -1rem;
     margin-bottom: 2rem;
+
   }
 
   .landing button {
-    padding: 0.8rem 2rem;
+    /*: 0.8rem 2rem;
     font-size: 1.1rem;
-    border-radius: 4px; 
+    border-radius: 4px; */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .products {
@@ -792,6 +774,8 @@ padding-top: 5%;
   .logo img {
     height: 14rem;  
     margin-top: -3rem; 
+    width: auto;
+    max-width: none;
   }
 
   .bottom-images {
@@ -818,6 +802,9 @@ padding-top: 5%;
     margin: 0 0 8px 0;
   }
 
+  .title h3 {
+    margin-top: -100px;
+  }
   .discount {
     margin: 10%;
     font-size: inherit;
@@ -888,5 +875,33 @@ padding-top: 5%;
     font-size: 1rem;
   }
 
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+.logo{
+    font-family:'Great Vibes', cursive;
+    font-size:42px;
+}
+nav{
+    font-family:'Josefin Sans', sans-serif;
+    text-transform:uppercase;
+
+}
+.decor-text h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.decor-text p {
+  font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family:'Poppins', sans-serif;
+    font-weight:600;
+}
+
+button{
+    font-family:'Poppins', sans-serif;
+    font-weight:500;
 }
  
