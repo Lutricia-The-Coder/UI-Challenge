@@ -17,11 +17,14 @@ html, body {
   justify-content: space-between;
   align-items: center;
   background-color: #f8d7da;
-  padding: 1rem 3rem;
+  padding: 0 50px;
   font-family: 'Poppins', sans-serif;
   position: fixed;
-  width: 100%;
-  z-index: 1000;
+height: 70px;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 
 .logohead {
@@ -33,18 +36,22 @@ html, body {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 1rem;
+  
 }
 
 .nav-links li {
   font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 1px;
   font-weight: 500;
   color: #180101;
   cursor: pointer;
-
+  
+padding-left: 27%;
 }
-
+.desktop-nav-container {
+  
+  
+  }
 nav li:hover {
   color: #b56576;
 }
@@ -69,10 +76,9 @@ nav li:hover {
   padding: 4rem 2rem;
   font-family: 'Playfair Display', serif;
   background-image: url('./assets/landing.png');
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
-   height:100vh;
-
+  height: 100vh;
 }
 .decor-text{
   font-family: 'Great Vibes', cursive;
@@ -630,6 +636,7 @@ padding-top: 5%;
   }
 }
 /* 
+   DESKTOP *//* 
    DESKTOP */
 
 @media screen and (min-width: 1024px) {
@@ -652,7 +659,7 @@ padding-top: 5%;
 
   .hamburger-container {
     display: none ;
-    /*margin-right: 3rem;*/
+    margin-right: 3rem;
   }
 
  
@@ -667,26 +674,23 @@ padding-top: 5%;
   }
   .landing {
   
-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: center;
     height: 100vh;
     padding-top: 10px; 
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-position: center top;
-
   }
 
   .decor-text {
    
-   margin-top: 15rem; 
+    margin-top: 15rem; 
     font-size: 2.5rem;
     max-width: 600px;
     text-align: center;
-  
   }
 
   .decor-text h1 {
@@ -697,23 +701,16 @@ background-size: cover;
   }
 
   .decor-text p {
-  font-family: 'Ingrid Darling', cursive; 
+   font-family: 'Ingrid Darling', cursive; 
     font-size: 2.2rem;
     margin-top: -1rem;
     margin-bottom: 2rem;
-
   }
 
   .landing button {
-    /*: 0.8rem 2rem;
+    padding: 0.8rem 2rem;
     font-size: 1.1rem;
-    border-radius: 4px; */
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    border-radius: 4px; 
   }
 
   .products {
@@ -892,16 +889,3 @@ nav{
 .decor-text h1 {
   font-family: 'Montserrat', sans-serif;
 }
-.decor-text p {
-  font-family: 'Montserrat', sans-serif;
-}
-h2{
-    font-family:'Poppins', sans-serif;
-    font-weight:600;
-}
-
-button{
-    font-family:'Poppins', sans-serif;
-    font-weight:500;
-}
- 
