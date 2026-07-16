@@ -1,7 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+.logo{
+    font-family:'Great Vibes', cursive;
+    font-size:42px;
+}
+
+.hero-title{
+    font-family:'Great Vibes', cursive;
+    font-size:72px;
+}
+
+nav{
+    font-family:'Josefin Sans', sans-serif;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+h2{
+    font-family:'Poppins', sans-serif;
+    font-weight:600;
+}
+
+button{
+    font-family:'Poppins', sans-serif;
+    font-weight:500;
 }
 .header {
   display: flex;
@@ -16,20 +54,24 @@
 }
 
 .logohead {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Great Vibes', cursive;
   font-size: 1.8rem;
-  color: #b56576;
+  color: #000;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-nav li {
+.nav-links li {
+  font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+  font-weight: 500;
+  color: #180101;
   cursor: pointer;
-  color: #333;
+
 }
 
 nav li:hover {
@@ -48,11 +90,11 @@ nav li:hover {
   background-color: #8e4a5a;
 }
 
+
+/* Landing Section */
 .landing {
   text-align: center;
-  background-color: 
-#EDD0CC;
-
+  background-color: #EDD0CC;
   padding: 4rem 2rem;
   font-family: 'Playfair Display', serif;
   background-image: url('./assets/landing.png');
@@ -62,6 +104,8 @@ nav li:hover {
 
 }
 .decor-text{
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
   margin-top: 15rem;
 }
 
@@ -83,6 +127,12 @@ nav li:hover {
   text-align: center;
   padding: 4rem 2rem;
   
+}
+.products h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 2rem;
 }
 
 .product-grid {
@@ -149,15 +199,17 @@ nav li:hover {
 }
 
 
+/* Advertisement Collection Layout */
 .collection-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 1px;
+  margin-top: -1px;
    background-color: 
 #EBE8E3;
 padding-block: 50px;
+border: none;
 }
 
 
@@ -271,6 +323,7 @@ font-weight: bolder;
   background-color: #b03a3a;
 }
 
+
 /* footer styling*/
 .footer {
   display: flex;
@@ -339,11 +392,502 @@ padding-top: 5%;
   cursor: pointer;
 }
 /*mobile*/
-@media(max-width: 768px) {
- .product-grid {
-  display: block;
-  gap: 3rem;
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 1rem 1.25rem; 
+  }
+
+
+  .desktop-nav-container {
+    display: none;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .order-btn {
+    padding: 0.5rem 1rem; 
+    font-size: 0.85rem;
+  }
+
+
+  .hamburger-container {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .mobile-nav-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da; 
+    padding: 1.75rem 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(181, 101, 118, 0.15);
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-nav-links li {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-nav-links li:hover {
+    color: #b56576;
+  }
+
+  .landing {
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1.5rem 2rem 1.5rem; 
+    height: 100vh;
+}
+
+.decor-text {
+    
+    margin-top: 0 ; 
+    font-size: 2rem; 
+    width: 100%;
+    max-width: 320px; 
+  }
+  .decor-text h1 {
+    font-size: 3.2rem; 
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  .decor-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .landing button {
+    width: 80%; 
+    max-width: 200px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+  .products {
+    padding: 3rem 1.25rem;
+    background: linear-gradient(to bottom, #f8e8ec 20%, #EBE8E3 80%);
+  }
+  .products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem; 
+    margin-bottom: 0px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .product-image {
+    height: 240px; 
+    object-fit: cover; 
+  }
+
+  .product-text {
+    padding: 1.75rem 1.25rem;
+    margin-top: -1rem; 
+  }
+
+  .product-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .product-text button {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-size: 0.95rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0; 
+    padding: 1rem 0;
+  }
+
+  .logo img {
+    width: 60%;         
+    max-width: 180px;   
+    height: auto;       
+    object-fit: contain; 
+    margin: 0 auto;
+  }
+  .collection-layout {
+    padding-block: 30px; 
+  }
+  .bottom-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .image-card {
+
+    width: 100%;
+    max-width: 21rem; 
+    height: 350px;
+  }
+
+  .text-overlay {
+    padding: 15px 10px;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%);
+  }
 
  
+  .title1 {
+    top: 0; 
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .discount {
+    margin: 4% auto;
+    font-size: 14px;
+  }
+
+  .discount1 {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+
+ 
+  .cta1, .cta {
+    width: 85%; 
+    max-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 11px;
+    margin-bottom: 2%;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2.5rem; 
+    padding: 3rem 1.5rem; 
+    text-align: center;
+  }
+
+  .footer-banner1 img,
+  .footer-banner2 img {
+  
+    width: 100%;
+    max-width: 15rem; 
+    border-right: none;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .footer-ad {
+    width: 100%;
+    align-items: center;
+  }
+
+
+  .bout-us {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .social-icons i, .bi {
+    margin: 0 8px;
+  }
+
+  .lastline p {
+
+    padding-left: 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
 }
+
+
+@media screen and (min-width: 768px) {
+  .hamburger-container {
+    display: none;
+  }
 }
+/* 
+   DESKTOP */
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0; 
+  }
+
+  .desktop-nav-container {
+    display: block ;
+  }
+
+
+  .hamburger-container {
+    display: none ;
+    margin-right: 3rem;
+  }
+
+ 
+  .mobile-nav-overlay {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem; 
+  }
+  .landing {
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  padding-top: 120px; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+  }
+
+  .decor-text {
+   
+    margin-top: 15rem; 
+    font-size: 2.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .decor-text h1 {
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .decor-text p {
+    font-family: 'Ingrid Darling', cursive; 
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+
+  .landing button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 4px; 
+  }
+
+  .products {
+    padding: 6rem 4rem; 
+    background: linear-gradient(to bottom, #f8e8ec 50%, #EBE8E3 50%);
+  }
+
+  .products h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 4rem;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 39px auto;
+  }
+
+  .product-card {
+    width: 340px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+  }
+
+  .product-text {
+    padding: 2.5rem 2rem; 
+    margin-top: -1.5rem; 
+  }
+
+  .product-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .product-text p {
+    font-size: 0.95rem;
+  }
+
+  .product-text button {
+    width: auto; 
+    padding: 0.6rem 2rem;
+  }
+
+  .collection-layout {
+    padding-block: 50px;
+  }
+
+  .logo img {
+    height: 14rem;  
+    margin-top: -3rem; 
+  }
+
+  .bottom-images {
+    flex-direction: row; 
+    justify-content: center;
+    gap: 3.2rem; 
+    width: auto;
+    padding-inline: 0;
+  }
+
+  .image-card {
+    width: 21rem; 
+    height: auto;
+  }
+
+  .text-overlay {
+    padding: 10px 0;
+    background: transparent; 
+  }
+
+  .title1 {
+    top: -20px; 
+    font-size: 18px;
+    margin: 0 0 8px 0;
+  }
+
+  .discount {
+    margin: 10%;
+    font-size: inherit;
+  }
+
+  .discount1 {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .cta1 {
+    width: auto;
+    padding: 0.6rem 1.5rem 3% 3rem;
+    padding-right: 3rem;
+  }
+
+  .cta {
+    width: auto;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-bottom: 5%;
+  }
+  .footer {
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+    gap: 7rem; 
+    padding: 2rem 3rem;
+    padding-top: 5%;
+    text-align: left; 
+  }
+
+  .footer-banner1 img,
+  .footer-banner2 img {
+    width: 19rem; 
+    border-right: 1px solid #ccc; 
+    padding-right: 2rem;
+    margin: 0;
+  }
+
+  .footer-ad {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .bout-us {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .social-icons i, .bi {
+    margin: 0 10px;
+  }
+
+  .lastline p {
+    padding-left: 3.5rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+}
+ 
