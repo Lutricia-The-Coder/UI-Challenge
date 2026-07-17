@@ -17,11 +17,10 @@ html, body {
   justify-content: space-between;
   align-items: center;
   background-color: #f8d7da;
-  padding: 0 50px;
-  font-family: 'Poppins', sans-serif;
+  padding: 0 15px;
   position: fixed;
-height: 70px;
-  z-index: 99;
+  height: 70px;
+  z-index: 100;
   right: 0;
   left: 0;
   top: 0;
@@ -32,11 +31,18 @@ height: 70px;
   font-size: 1.8rem;
   color: #000;
 }
+.desktop-nav-container {
+  display: none; /* Controlled by media queries below */
+}
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
   
 }
 
@@ -46,12 +52,9 @@ nav ul {
   color: #180101;
   cursor: pointer;
   
-padding-left: 27%;
+padding-left: 8%;
 }
-.desktop-nav-container {
-  
-  
-  }
+
 nav li:hover {
   color: #b56576;
 }
@@ -61,14 +64,48 @@ nav li:hover {
   border: none;
   padding: 0.6rem 1.5rem;
   cursor: pointer;
-
+background-color: #fff;
 }
 
 .order-btn:hover {
   background-color: #8e4a5a;
 }
 
+.hamburger-container {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+}.mobile-nav-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f8d7da; 
+  padding: 1.5rem 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(181, 101, 118, 0.15);
+}
 
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.mobile-nav-links li {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #180101;
+  cursor: pointer;
+}
 /* Landing Section */
 .landing {
   text-align: center;
@@ -76,9 +113,13 @@ nav li:hover {
   padding: 4rem 2rem;
   font-family: 'Playfair Display', serif;
   background-image: url('./assets/landing.png');
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .decor-text{
   font-family: 'Great Vibes', cursive;
@@ -93,6 +134,7 @@ nav li:hover {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   border: none;
+  
 }
 
 .landing button:hover {
@@ -170,7 +212,7 @@ nav li:hover {
  background-color: 
 #EBE8E3;
   padding: 2rem 1.5rem;
-  margin-top: -1.5rem; 
+  margin-top: -1rem; 
   position: relative;
 
 }
@@ -443,7 +485,8 @@ padding-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6rem 1.5rem 2rem 1.5rem; 
+flex-direction: column;
+    align-items: center;
     height: 100vh;
   
 }
@@ -635,257 +678,223 @@ padding-top: 5%;
     display: none;
   }
 }
-/* 
-   DESKTOP *//* 
-   DESKTOP */
+/*laptop*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
-    padding: 1rem 5rem;
+    padding: 0 30px;
+    height: 70px;
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
-  }
-.header-actions {
-    display: flex;
     align-items: center;
-    gap: 0; 
+  }
+
+  .hamburger-container, 
+  .mobile-nav-overlay {
+    display: none;
   }
 
   .desktop-nav-container {
-    display: block ;
-  }
-
-
-  .hamburger-container {
-    display: none ;
-    margin-right: 3rem;
-  }
-
- 
-  .mobile-nav-overlay {
-    display: none;
+    display: block;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.5rem; 
-  }
-  .landing {
-  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    padding-top: 10px; 
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    gap: 1rem; 
+    padding: 0;
+    margin: 0;
   }
 
-  .decor-text {
-   
-    margin-top: 15rem; 
-    font-size: 2.5rem;
-    max-width: 600px;
-    text-align: center;
+  .nav-links li {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #180101;
+    cursor: pointer;
+    font-size: 0.85rem;
+  
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; 
+  }
+
+  .order-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 
   .decor-text h1 {
-    font-size: 4.5rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    color: #000;
+    font-size: 3.8rem;
   }
 
   .decor-text p {
-   font-family: 'Ingrid Darling', cursive; 
-    font-size: 2.2rem;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-  }
-
-  .landing button {
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 4px; 
+    font-size: 2rem;
   }
 
   .products {
-    padding: 6rem 4rem; 
+    padding: 4rem 2rem;
     background: linear-gradient(to bottom, #f8e8ec 50%, #EBE8E3 50%);
   }
 
-  .products h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 4rem;
-  }
-
   .product-grid {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto 39px auto;
+    gap: 1.5rem;
   }
 
   .product-card {
-    width: 340px; 
-  }
-
-  .product-card:hover {
-    transform: translateY(-8px);
+    width: 31%;
   }
 
   .product-image {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-  }
-
-  .product-text {
-    padding: 2.5rem 2rem; 
-    margin-top: -1.5rem; 
-  }
-
-  .product-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .product-text p {
-    font-size: 0.95rem;
-  }
-
-  .product-text button {
-    width: auto; 
-    padding: 0.6rem 2rem;
-  }
-
-  .collection-layout {
-    padding-block: 50px;
-  }
-
-  .logo img {
-    height: 14rem;  
-    margin-top: -3rem; 
-    width: auto;
-    max-width: none;
+    height: 280px;
   }
 
   .bottom-images {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
-    gap: 3.2rem; 
-    width: auto;
-    padding-inline: 0;
+    gap: 1.5rem;
   }
 
   .image-card {
-    width: 21rem; 
-    height: auto;
+    width: 31%;
+    height: 320px;
   }
 
-  .text-overlay {
-    padding: 10px 0;
-    background: transparent; 
-  }
-
-  .title1 {
-    top: -20px; 
-    font-size: 18px;
-    margin: 0 0 8px 0;
-  }
-
-  .title h3 {
-    margin-top: -100px;
-  }
-  .discount {
-    margin: 10%;
-    font-size: inherit;
-  }
-
-  .discount1 {
-    font-size: 14px;
-    margin: 4px 0;
-  }
-
-  .cta1 {
-    width: auto;
-    padding: 0.6rem 1.5rem 3% 3rem;
-    padding-right: 3rem;
-  }
-
-  .cta {
-    width: auto;
-    padding-left: 37px;
-    padding-right: 37px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    font-size: 12px;
-    margin-top: 6px;
-    margin-bottom: 5%;
-  }
   .footer {
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center;
-    gap: 7rem; 
-    padding: 2rem 3rem;
-    padding-top: 5%;
-    text-align: left; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 3rem;
   }
 
   .footer-banner1 img,
   .footer-banner2 img {
-    width: 19rem; 
-    border-right: 1px solid #ccc; 
+    width: 15rem;
+    border-right: 1px solid #ccc;
+    padding-right: 1.5rem;
+    margin: 0;
+  }
+
+  .footer-ad {
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+/* DESKTOP  (min-width: 1024px and wider) --- */
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0 60px;
+  }
+
+  .hamburger-container, 
+  .mobile-nav-overlay {
+    display: none;
+  }
+
+  .desktop-nav-container {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+  }
+
+  .nav-links li {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #180101;
+    cursor: pointer;
+  }
+
+  .nav-links li:hover {
+    color: #b56576;
+  }
+
+  .decor-text h1 {
+    font-size: 4.5rem;
+  }
+
+  .decor-text p {
+    font-size: 2.2rem;
+  }
+
+  .products {
+    padding: 6rem 4rem;
+    background: linear-gradient(to bottom, #f8e8ec 50%, #EBE8E3 50%);
+  }
+
+  .products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .product-grid {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .product-card {
+    width: 340px;
+  }
+
+  .product-image {
+    height: 380px;
+  }
+
+  .logo img {
+    height: 14rem;
+  }
+
+  .bottom-images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3.2rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 7rem;
+    padding-top: 5%;
+  }
+
+  .footer-banner1 img,
+  .footer-banner2 img {
+    width: 19rem;
+    border-right: 1px solid #ccc;
     padding-right: 2rem;
     margin: 0;
   }
 
   .footer-ad {
-    width: auto;
     align-items: flex-start;
   }
 
   .bout-us {
-    font-size: 1.8rem;
     text-align: left;
   }
 
   .social-icons {
     justify-content: flex-start;
-    gap: 1rem;
-    margin: 0;
   }
-
-  .social-icons i, .bi {
-    margin: 0 10px;
-  }
-
-  .lastline p {
-    padding-left: 3.5rem;
-    text-align: left;
-    font-size: 1rem;
-  }
-
-}
-body{
-    font-family:'Poppins', sans-serif;
-}
-
-.logo{
-    font-family:'Great Vibes', cursive;
-    font-size:42px;
-}
-nav{
-    font-family:'Josefin Sans', sans-serif;
-    text-transform:uppercase;
-
-}
-.decor-text h1 {
-  font-family: 'Montserrat', sans-serif;
 }
