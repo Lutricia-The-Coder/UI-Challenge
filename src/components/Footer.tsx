@@ -24,8 +24,8 @@ const Footer = () => {
   Faithful Bee Bites
 </h5>
       <div className="social-icons">
-  <a href="#"><i className="bi bi-facebook"></i></a>
-  <a href="#"><i className="bi bi-linkedin"></i></a>
+  <a href="#"> <i className="bi bi-facebook"></i></a>
+  <a href="#"> <i className="bi bi-linkedin"></i></a>
   <a href="#"><i className="bi bi-pinterest"></i></a>
 </div>
         <div className='lastline'>
