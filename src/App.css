@@ -1,5 +1,9 @@
 
-
+   @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -27,7 +31,8 @@ html, body {
 }
 
 .logohead {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great vibes', cursive;
+    font-weight: 700;
   font-size: 1.8rem;
   color: #000;
 }
@@ -79,7 +84,8 @@ background-color: #fff;
   padding: 4px;
   align-items: center;
   justify-content: center;
-}.mobile-nav-overlay {
+}
+.mobile-nav-overlay {
   position: absolute;
   top: 100%;
   left: 0;
@@ -122,9 +128,8 @@ background-color: #fff;
   align-items: center;
 }
 .decor-text{
-  font-family: 'Great Vibes', cursive;
+ font-family:'Poppins', sans-serif;
   font-size: 2.5rem;
-  margin-top: 15rem;
 }
 
 .landing button {
@@ -132,7 +137,6 @@ background-color: #fff;
   color: white;
   padding: 0.8rem 1.5rem;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
   border: none;
   
 }
@@ -149,8 +153,9 @@ background-color: #fff;
 }
 .products h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: black;
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 
@@ -176,9 +181,9 @@ background-color: #fff;
 
 .product-text h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: black;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.8rem;
    background-color: 
 #EBE8E3;
@@ -188,7 +193,7 @@ background-color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
    background-color: 
 #EBE8E3;
@@ -277,27 +282,28 @@ border: none;
   padding: 10px 0;
   text-align: center;
 }
-.title h3{
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
-  color: #7a2a2a;
+h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
  margin: 0 0 8px 0;  
   position: relative;
-   margin-top: -100px;
+  color: #000;
+   margin-bottom: 140px;
   
 }
 .title1 {
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
+font-family: 'Great Vibes', cursive;
+  font-size: 35px;
   color: white;
  margin: 0 0 8px 0;   
   position: relative;
-  top: -20px;
+  top: -2px;
 
 }
 .discount{
   margin: 10%;
   font-weight: bold;
+  font-size: x-large;
 }
 .discount1 {
   font-family: "Montserrat", sans-serif;
@@ -319,8 +325,13 @@ border: none;
    padding: 0.6rem 1.5rem;
    border: none;
    padding-bottom: 3%;
+   padding-top: 3%;
    padding-left: 3rem;
    padding-right: 3rem;
+  
+}
+.cta1:hover{
+    background-color: #b03a3a;
 }
 .cta {
   background-color: white;
@@ -377,6 +388,7 @@ padding-top: 5%;
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-family: 'Great Vibes';
 }
 
 .social-icons {
@@ -390,6 +402,7 @@ padding-top: 5%;
   font-style: italic;
   margin-top: 0.5rem;
   padding-left: 3.5rem;
+  font-family: 'Times New Roman', Times, serif
 }
 
 .social-icons i {
@@ -487,34 +500,33 @@ padding-top: 5%;
     justify-content: center;
 flex-direction: column;
     align-items: center;
-    height: 100vh;
+     height: 240px; 
+    object-fit: cover; 
   
 }
-
-.decor-text {
-    
-    margin-top: 0 ; 
-    font-size: 2rem; 
-    width: 100%;
-    max-width: 320px; 
-  }
+.decor-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
   .decor-text h1 {
-    font-size: 3.2rem; 
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem; 
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+  margin: 0;
   }
 
   .decor-text p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+   font-size: 0.5rem;
+  color: #000;
+  margin-bottom: 0.25rem;
   }
 
-  .landing button {
-    width: 80%; 
-    max-width: 200px;
-    padding: 0.9rem 1.5rem;
-    font-size: 1rem;
-  }
+.landing button {
+  display: none; 
+}
   .products {
     padding: 3rem 1.25rem;
     background: linear-gradient(to bottom, #f8e8ec 20%, #EBE8E3 80%);
@@ -730,15 +742,24 @@ flex-direction: column;
     font-size: 0.85rem;
     white-space: nowrap;
   }
-
+.decor-text{
+  margin-bottom: 22%;
+}
   .decor-text h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 
   .decor-text p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
+  .logo img{         
+    max-width: 600px;   
+    width: 100%;
+    height: auto;       
+    object-fit: contain; 
+    margin: 0 auto;
+  }
   .products {
     padding: 4rem 2rem;
     background: linear-gradient(to bottom, #f8e8ec 50%, #EBE8E3 50%);
@@ -793,8 +814,8 @@ flex-direction: column;
   }
 }
 
-/* DESKTOP  (min-width: 1024px and wider) --- */
-@media screen and (min-width: 1024px) {
+/* DESKTOP */
+@media(min-width: 1024px) {
   .header {
     padding: 0 60px;
   }
@@ -825,18 +846,24 @@ flex-direction: column;
   .nav-links li:hover {
     color: #b56576;
   }
-
+.decor-text
+{
+  margin-bottom: 15%;
+  
+}
   .decor-text h1 {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
   }
 
   .decor-text p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-
+.decor-text button{
+  margin-bottom: 5%;
+}
   .products {
     padding: 6rem 4rem;
-    background: linear-gradient(to bottom, #f8e8ec 50%, #EBE8E3 50%);
+    background: linear-gradient(to bottom, #f8e8ec 60%, #EBE8E3 50%);
   }
 
   .products h2 {
@@ -858,6 +885,7 @@ flex-direction: column;
 
   .product-image {
     height: 380px;
+    
   }
 
   .logo img {
@@ -896,5 +924,30 @@ flex-direction: column;
 
   .social-icons {
     justify-content: flex-start;
+    }
   }
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  background-color: #fffafc; 
 }
+
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  margin-bottom: 0.5em;
+}
+nav{
+   font-family: 'Courier New', Courier, monospace;
+}
+ button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+

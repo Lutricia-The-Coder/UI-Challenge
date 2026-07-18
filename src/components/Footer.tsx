@@ -23,11 +23,11 @@ const Footer = () => {
 <h5 className='bout-us'>
   Faithful Bee Bites
 </h5>
-        <div className="social-icons">
-          <i className="bi bi-facebook"></i>
-  <i className="bi bi-linkedin"></i>
-  <i className="bi bi-pinterest"></i>
-        </div>
+      <div className="social-icons">
+  <a href="#"><i className="bi bi-facebook"></i></a>
+  <a href="#"><i className="bi bi-linkedin"></i></a>
+  <a href="#"><i className="bi bi-pinterest"></i></a>
+</div>
         <div className='lastline'>
           <p>
 Freshly Frosted Favorites
