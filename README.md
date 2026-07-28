@@ -32,9 +32,11 @@ Follow these steps to run the project locally:
    cd UI-Challenge
 
 2. Install dependencies
+   ```bash
    npm install
 
-3. Run the development server
-   npm run 
+4. Run the development server
+   ```bash
+   npm run dev
 
-**To see the live site**  check ui-challenge-drab.vercel.app
+ see the live site  check **ui-challenge-drab.vercel.app**
