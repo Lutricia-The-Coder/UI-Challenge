@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+#  Patisserie UI Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front‑end project created to mimic a luxury patisserie/bakery landing page design.  
+The goal was to reproduce the elegant aesthetic of the reference image — pink floral accents, gold highlights, and a showcase of cakes, cupcakes, and macarons — using modern web technologies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- **Hero Section** with tagline and call‑to‑action buttons.
+- **Menu Navigation**: Cakes, Parties, Contact.
+- **Product Highlights**: Custom Cakes, Macarons, Cupcake Collection
+- **Advertisment**: Holiday Collection with 20% OFF banner.
+- **Responsive Layout** for desktop and mobile.
+- **Elegant Styling** inspired by patisserie branding.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Tech Stack
+- **HTML** & **CSS3** for structure and styling.
+- **React ts** for interactivity.
+- **Vercel** for deployment and hosting.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+##  Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Follow these steps to run the project locally:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Lutricia-The-Coder/UI-Challenge.git
+   cd UI-Challenge
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies
+   npm install
 
-```
+3. Run the development server
+   npm run 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+**To see the live site**  check ui-challenge-drab.vercel.app
