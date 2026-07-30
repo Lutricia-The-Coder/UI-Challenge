@@ -5,6 +5,11 @@ The goal was to reproduce the elegant aesthetic of the reference image — pink 
 
 ---
 
+## Preview 
+
+![The preview](src/assets/UI-Challenge2.jpg)
+---
+
 ## Features
 - **Hero Section** with tagline and call‑to‑action buttons.
 - **Menu Navigation**: Cakes, Parties, Contact.
