@@ -1,4 +1,4 @@
-import React from 'react'
+
 import cakeImg from '../assets/custom-cakes.png'
 import macaronImg from '../assets/macarons.png'
 import cupcakeImg from '../assets/cupcake-collection.png'

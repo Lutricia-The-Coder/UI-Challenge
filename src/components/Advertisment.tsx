@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Holiday from '../assets/holiday.png'
 import Cupcakes from '../assets/cupcake.png'
 import HolidayCollection from '../assets/holiday-collection.png'

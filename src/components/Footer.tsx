@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Footer1Img from '../assets/footer1.png'
 import Footer2Img from '../assets/Footer2.png'
 
