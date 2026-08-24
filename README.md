@@ -24,8 +24,21 @@ The goal was to reproduce the elegant aesthetic of the reference image — pink 
 - **HTML** & **CSS3** for structure and styling.
 - **React ts** for interactivity.
 - **Vercel** for deployment and hosting.
+- **Vite**
 
 ---
+## Prerequisites
+Before you begin, ensure you have the following installed:
+
+Node.js (v18 or later recommended)
+npm (comes with Node.js)
+
+You can verify your installation by running:
+
+```bash
+node -v
+npm -v
+```
 
 ##  Getting Started
 
@@ -44,4 +57,21 @@ Follow these steps to run the project locally:
    ```bash
    npm run dev
 
+Vite will start the application and display something similar to:
+
+```
+Local: http://localhost:5173
+```
+
  see the live site  check **ui-challenge-drab.vercel.app**
+
+### Useful Resources
+
+* React Documentation - Comprehensive guide for React concepts
+* TypeScript Handbook - Official TypeScript learning resources
+* Vite Docs - Fast build tool and dev server documentation
+* Hugeicons - Icon library used for navigation and UI elements
+* Frontend Mentor - For realistic front-end development challenges
+
+## Author
+**Lutricia Ngomane**
